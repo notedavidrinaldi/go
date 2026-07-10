@@ -34,6 +34,7 @@ func OpenInRoot(dir, name string) (*File, error) {
 // Root may be used to only access files within a single directory tree.
 //
 // Methods on Root can only access files and directories beneath a root directory.
+// Paths passed to methods of Root must be relative paths.
 // If any component of a file name passed to a method of Root references a location
 // outside the root, the method returns an error.
 // File names may reference the directory itself (.).
